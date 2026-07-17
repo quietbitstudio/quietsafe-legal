@@ -1,0 +1,15 @@
+.privacy-consent[hidden], .privacy-settings-button[hidden] { display: none !important; }
+.privacy-consent { position: fixed; z-index: 10000; right: 18px; bottom: 18px; left: 18px; max-width: 900px; margin: 0 auto; color: #eef7ff; background: #071b2c; border: 1px solid rgba(99,179,237,.45); border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.38); font-family: Arial,sans-serif; }
+.privacy-consent__content { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 20px; }
+.privacy-consent__copy strong { display: block; margin-bottom: 6px; font-size: 1rem; }
+.privacy-consent__copy p { margin: 0 0 6px; color: #c9d9e6; font-size: .9rem; line-height: 1.45; }
+.privacy-consent__copy a { color: #7dd3fc; font-size: .85rem; }
+.privacy-consent__actions { display: flex; flex: 0 0 auto; gap: 10px; }
+.privacy-consent__button, .privacy-settings-button { border: 0; border-radius: 9px; cursor: pointer; font: 700 .88rem/1 Arial,sans-serif; }
+.privacy-consent__button { padding: 12px 16px; }
+.privacy-consent__button--primary { color: #04131f; background: #38bdf8; }
+.privacy-consent__button--secondary { color: #e5edf4; background: #24394b; }
+.privacy-consent__button:focus-visible, .privacy-settings-button:focus-visible { outline: 3px solid #fbbf24; outline-offset: 3px; }
+.privacy-settings-button { position: fixed; z-index: 9999; left: 14px; bottom: 14px; padding: 9px 12px; color: #d9e8f2; background: rgba(7,27,44,.94); border: 1px solid rgba(99,179,237,.35); }
+@media (max-width:700px) { .privacy-consent__content { align-items: stretch; flex-direction: column; gap: 14px; } .privacy-consent__actions { display: grid; grid-template-columns: 1fr 1fr; } }
+@media (max-width:420px) { .privacy-consent__actions { grid-template-columns: 1fr; } }
