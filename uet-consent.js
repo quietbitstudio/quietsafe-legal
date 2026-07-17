@@ -64,13 +64,13 @@
     banner.innerHTML =
       '<div class="privacy-consent__content">' +
         '<div class="privacy-consent__copy">' +
-          '<strong id="privacy-consent-title">Nastavení měření návštěvnosti</strong>' +
-          '<p>Microsoft Advertising používáme k měření návštěv webu a kliknutí do Microsoft Storu. Reklamní cookies povolíme jen s vaším souhlasem.</p>' +
+          '<strong id="privacy-consent-title">Nastavení soukromí a cookies</strong>' +
+          '<p>Používáme nezbytné technologie pro provoz webu. S vaším souhlasem také používáme Microsoft UET k přesnějšímu měření návštěvnosti a účinnosti reklamy. Bez souhlasu zůstává UET v omezeném režimu bez reklamních cookies.</p>' +
           '<a href="/privacy-policy.html#website-measurement">Více informací</a>' +
         '</div>' +
         '<div class="privacy-consent__actions">' +
-          '<button type="button" class="privacy-consent__button privacy-consent__button--secondary" data-consent="denied">Odmítnout</button>' +
-          '<button type="button" class="privacy-consent__button privacy-consent__button--primary" data-consent="granted">Povolit měření</button>' +
+          '<button type="button" class="privacy-consent__button privacy-consent__button--secondary" data-consent="denied">Pouze nezbytné</button>' +
+          '<button type="button" class="privacy-consent__button privacy-consent__button--primary" data-consent="granted">Povolit vše</button>' +
         '</div>' +
       '</div>';
 
