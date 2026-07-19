@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "quietsafe_uet_consent_v1";
+  var STORAGE_KEY = "quietsafe_ad_consent_v2";
   var UET_TAG_ID = "187262760";
 
   window.uetq = window.uetq || [];
@@ -39,6 +39,14 @@
 
   function updateConsent(choice) {
     var granted = choice === "granted";
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        ad_storage: granted ? "granted" : "denied",
+        analytics_storage: granted ? "granted" : "denied",
+        ad_user_data: granted ? "granted" : "denied",
+        ad_personalization: granted ? "granted" : "denied"
+      });
+    }
     window.uetq = window.uetq || [];
     window.uetq.push("consent", "update", {
       ad_storage: granted ? "granted" : "denied"
@@ -65,7 +73,7 @@
       '<div class="privacy-consent__content">' +
         '<div class="privacy-consent__copy">' +
           '<strong id="privacy-consent-title">Nastavení soukromí a cookies</strong>' +
-          '<p>Používáme nezbytné technologie pro provoz webu. S vaším souhlasem také používáme Microsoft UET k přesnějšímu měření návštěvnosti a účinnosti reklamy. Bez souhlasu zůstává UET v omezeném režimu bez reklamních cookies.</p>' +
+          '<p>Používáme nezbytné technologie pro provoz webu. S vaším souhlasem také používáme Microsoft UET a Google Ads k přesnějšímu měření návštěvnosti a účinnosti reklamy. Bez souhlasu zůstávají reklamní značky v omezeném režimu bez reklamních cookies.</p>' +
           '<a href="/privacy-policy.html#website-measurement">Více informací</a>' +
         '</div>' +
         '<div class="privacy-consent__actions">' +
@@ -112,6 +120,14 @@
         event_label: "Microsoft Store",
         event_value: 1
       });
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "store_click", {
+          event_category: "engagement",
+          event_label: "Microsoft Store",
+          value: 1,
+          transport_type: "beacon"
+        });
+      }
     });
   }
 

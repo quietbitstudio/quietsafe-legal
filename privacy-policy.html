@@ -6,6 +6,14 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+    gtag('set', 'ads_data_redaction', true);
     gtag('js', new Date());
 
     gtag('config', 'AW-18332590954');
@@ -24,7 +32,7 @@
 
     <p><strong>Publisher:</strong> QuietBit Studio</p>
     <p><strong>Contact:</strong> quietbitstudio@gmail.com</p>
-    <p><strong>Effective date:</strong> 2026-06-16</p>
+    <p><strong>Effective date:</strong> 2026-06-16 · <strong>Last updated:</strong> 2026-07-19</p>
 
     <h2>Summary</h2>
     <p>QuietSafe is designed as a local encrypted vault application. Vault contents are stored locally on the user's device and are not uploaded to a QuietSafe cloud service.</p>
@@ -51,8 +59,9 @@
     <p>If the user contacts support, QuietBit Studio may receive information voluntarily provided by the user, such as email address, screenshots, logs, or a description of a problem. Users should not send vault passwords or sensitive files to support.</p>
 
     <h2 id="website-measurement">Website analytics and advertising measurement</h2>
-    <p>The QuietBit Studio website uses Microsoft Advertising Universal Event Tracking (UET), tag ID 187262760, to measure website visits, Microsoft Store link clicks, and advertising campaign performance. This website starts UET with advertising storage denied. If a visitor selects “Allow all”, the consent state changes to granted and Microsoft Advertising may use advertising cookies. If a visitor selects “Necessary only”, UET remains in a limited mode and may still send cookieless measurement signals.</p>
-    <p>The visitor's consent choice is stored in the browser's local storage and can be changed at any time with the “Privacy settings” button. For more information about Microsoft's processing, see the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</p>
+    <p>The QuietBit Studio website uses Microsoft Advertising Universal Event Tracking (UET), tag ID 187262760, and the Google tag for Google Ads, tag ID AW-18332590954, to measure website visits, Microsoft Store link clicks, and advertising campaign performance.</p>
+    <p>Advertising and analytics storage, advertising user data, and ad personalization are denied by default. If a visitor selects “Allow all”, these consent states change to granted and Microsoft Advertising and Google Ads may use measurement and advertising cookies. If a visitor selects “Necessary only”, the tags remain in a restricted, cookieless measurement mode.</p>
+    <p>The visitor's consent choice is stored in the browser's local storage and can be changed at any time with the “Privacy settings” button. For more information, see the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
     <h2>Children</h2>
     <p>QuietSafe is not intended to knowingly collect personal information from children.</p>
