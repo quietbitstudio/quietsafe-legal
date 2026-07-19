@@ -114,6 +114,22 @@
     document.addEventListener("click", function (event) {
       var storeLink = event.target.closest('a[href*="apps.microsoft.com"]');
       if (!storeLink) return;
+      var shouldDelayNavigation =
+        event.button === 0 &&
+        !event.ctrlKey &&
+        !event.metaKey &&
+        !event.shiftKey &&
+        !event.altKey &&
+        storeLink.target !== "_blank";
+      var navigationCompleted = false;
+
+      function continueNavigation() {
+        if (!shouldDelayNavigation || navigationCompleted) return;
+        navigationCompleted = true;
+        window.location.href = storeLink.href;
+      }
+
+      if (shouldDelayNavigation) event.preventDefault();
       window.uetq = window.uetq || [];
       window.uetq.push("event", "store_click", {
         event_category: "engagement",
@@ -127,7 +143,15 @@
           value: 1,
           transport_type: "beacon"
         });
+        var conversionParameters = {
+          send_to: "AW-18332590954/2wZECO756dIcEOrG1KVE"
+        };
+        if (shouldDelayNavigation) {
+          conversionParameters.event_callback = continueNavigation;
+        }
+        window.gtag("event", "conversion", conversionParameters);
       }
+      if (shouldDelayNavigation) window.setTimeout(continueNavigation, 800);
     });
   }
 
