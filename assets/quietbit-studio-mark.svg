@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">QuietBit Studio</title>
+  <desc id="desc">Propojený geometrický monogram písmen Q a B</desc>
+  <path fill="#1687f8" fill-rule="evenodd" d="M258 56h91c74 0 119 38 119 101 0 43-22 73-58 89 45 15 72 49 72 96 0 72-50 114-133 114h-91V56Zm70 64v98h18c36 0 57-17 57-49 0-31-21-49-57-49h-18Zm0 158v114h22c42 0 66-20 66-57 0-36-24-57-66-57h-22Z"/>
+  <path fill="#13d8e8" fill-rule="evenodd" d="M205 80c-97 0-175 78-175 175s78 175 175 175c31 0 60-8 85-22l-46-48a110 110 0 1 1 68-102c0 29-11 55-29 75l46 48c30-32 48-75 48-123 0-98-77-178-172-178Zm6 208 43-42 139 145-44 42-138-145Z"/>
+</svg>
