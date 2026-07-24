@@ -125,7 +125,7 @@ footer { border-top: 1px solid var(--line); background: var(--bg-deep); }
 .studio-hero h1 { max-width: 780px; }
 .studio-identity { position: relative; min-height: 390px; display: grid; place-items: center; align-content: center; gap: 24px; border: 1px dashed rgba(85, 236, 247, .28); border-radius: 28px; background: radial-gradient(circle, rgba(25, 212, 230, .11), transparent 66%), rgba(255,255,255,.015); }
 .studio-identity::before { content: ""; position: absolute; inset: 12%; border: 1px solid rgba(151, 199, 225, .09); border-radius: 50%; }
-.studio-mark-large { position: relative; width: 150px; height: 150px; display: grid; place-items: center; border: 1px solid rgba(85, 236, 247, .4); border-radius: 36px; color: var(--cyan-2); background: linear-gradient(145deg, rgba(25, 212, 230, .15), rgba(34, 132, 216, .07)); box-shadow: 0 30px 70px rgba(0,0,0,.3), 0 0 50px rgba(25,212,230,.08); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 2.7rem; font-weight: 800; letter-spacing: -.1em; }
+.studio-mark-large { position: relative; width: 104px; height: 104px; display: grid; place-items: center; border: 1px solid rgba(85, 236, 247, .4); border-radius: 25px; color: var(--cyan-2); background: linear-gradient(145deg, rgba(25, 212, 230, .15), rgba(34, 132, 216, .07)); box-shadow: 0 24px 55px rgba(0,0,0,.3), 0 0 38px rgba(25,212,230,.08); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1.9rem; font-weight: 800; letter-spacing: -.1em; }
 .studio-identity p { position: relative; margin: 0; color: #7892a3; text-align: center; font-size: .82rem; letter-spacing: .04em; }
 .studio-identity strong { color: #bcd1dc; font-weight: 650; }
 .studio-about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; align-items: start; }
@@ -194,7 +194,7 @@ footer { border-top: 1px solid var(--line); background: var(--bg-deep); }
   .footer-bottom { flex-direction: column; }
   .studio-hero-grid { min-height: auto; padding-block: 68px 60px; gap: 42px; }
   .studio-identity { min-height: 270px; }
-  .studio-mark-large { width: 120px; height: 120px; border-radius: 28px; font-size: 2.2rem; }
+  .studio-mark-large { width: 84px; height: 84px; border-radius: 20px; font-size: 1.55rem; }
   .product-card { padding: 32px 24px; }
   .product-points { display: grid; }
 }
